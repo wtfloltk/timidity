@@ -32,6 +32,8 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: |
+          bash chmod +x configure
+          bash chmod +x autogen.sh
           bash ./autogen.sh
           bash ./configure
           bash make
